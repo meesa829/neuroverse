@@ -1,17 +1,17 @@
-import { Hash } from 'lucide-react'
+import { Anchor } from 'lucide-react'
 import { AITool } from '@/components/tools/AITool'
 
-export const metadata = { title: 'AI Hashtag Generator — NeuroVerse' }
+export const metadata = { title: 'AI Hook Generator — NeuroVerse' }
 
-export default function HashtagsPage() {
+export default function HooksPage() {
   return (
     <AITool
-      tool="hashtag"
-      title="AI Hashtag Generator"
-      description="Strategic hashtag sets: high-volume, mid-tier, and niche — for maximum reach."
-      icon={<Hash size={22} />}
-      placeholder="E.g. Vegan recipes, street photography, personal finance, gym motivation..."
-      accentColor="#a3ff00"
+      tool="hook"
+      title="AI Hook Generator"
+      description="5 scroll-stopping opening lines for your videos and posts. Make them stop."
+      icon={<Anchor size={22} />}
+      placeholder="E.g. How I lost 20kg in 3 months, investing for beginners, daily routine of a millionaire..."
+      accentColor="#00f5ff"
     />
   )
 }
