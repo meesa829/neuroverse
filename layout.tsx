@@ -1,21 +1,14 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import { Navbar } from '@/components/Navbar'
 
-export const metadata: Metadata = {
-  title: 'NeuroVerse — AI Content Studio',
-  description: 'Generate viral captions, hooks, and scripts using AI. Built for creators.',
-  keywords: ['AI content', 'caption generator', 'hook generator', 'script writer', 'social media'],
-  openGraph: {
-    title: 'NeuroVerse — AI Content Studio',
-    description: 'Generate viral captions, hooks, and scripts using AI.',
-    type: 'website',
-  },
-}
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>{children}</body>
-    </html>
+    <div className="min-h-screen">
+      <div className="fixed inset-0 bg-aurora opacity-60 pointer-events-none" />
+      <div className="fixed inset-0 bg-grid opacity-30 pointer-events-none" />
+      <Navbar />
+      <main className="relative z-10 pt-20 pb-12 px-4 md:px-8 max-w-6xl mx-auto">
+        {children}
+      </main>
+    </div>
   )
 }
