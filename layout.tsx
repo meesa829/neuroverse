@@ -1,6 +1,6 @@
 import { Navbar } from '@/components/Navbar'
 
-export default function AppLayout({ children }: { children: React.ReactNode }) {
+export default function ToolLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen">
       <div className="fixed inset-0 bg-aurora opacity-60 pointer-events-none" />
